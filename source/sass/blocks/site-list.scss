@@ -1,0 +1,71 @@
+.site-list {
+
+}
+
+.site-list__item {
+  margin-right: 40px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-bottom: 28px;
+    padding-left: 16px;
+    background: $special-burger;
+  }
+}
+
+.site-list__item:first-child {
+  margin-left: 22px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.site-list__item:last-child {
+  margin-right: 25px;
+}
+
+.site-list__item::after {
+  @media (max-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/arrow.svg");
+  }
+}
+
+.site-list__item:focus .site-list__link,
+.site-list__item:hover .site-list__link {
+
+}
+
+
+.site-list a {
+  @include font($openSans, normal, 300);
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  display: block;
+  padding: 20px 0 10px;
+  text-align: center;
+  color: $basic-white;
+  opacity: 0.7;
+
+  @media (max-width: $tablet-width) {
+    @include font($openSans, normal, 400);
+    font-size: 20px;
+    line-height: 28px;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: start;
+    color: $grey;
+  }
+}

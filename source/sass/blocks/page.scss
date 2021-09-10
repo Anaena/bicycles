@@ -1,0 +1,17 @@
+.page {
+  @include font($openSans, normal, 400);
+  font-size: 16px;
+  line-height: 28px;
+  height: 100%;
+}
+
+.page__body {
+  max-width: 1440px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $basic-white;
+}

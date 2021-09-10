@@ -1,0 +1,34 @@
+// // Colors
+
+$basic-black: #000000;
+$basic-white: #FFFFFF;
+$egg-blue: #0AD9C6;
+$special-black: rgba(#000000, 70%);
+$special-white: rgba(255, 255, 255, 0.7);
+$white-transparent: rgba(255, 255, 255, 0.2);
+$black-transparent: rgba(#000000, 50%);
+$nero: #1F1F1F;
+$special-gray: #1C1C1C;
+$link-water: #C9CCD4;
+$black-russian: #131314;
+$black-rock: #070707;
+$alice-blue: #F6F7F9;
+$grey: #48494D;
+$special-burger: #F6F6F6;
+$special-cross: rgba(20, 21, 23, 0.2);
+
+// Font
+
+$openSans: "Open Sans", "Arial", sans-serif;
+
+@mixin font($font, $style: normal, $weight: 400) {
+  font-family: $font;
+  font-style: $style;
+  font-weight: $weight;
+}
+
+// Viewports
+
+$desktop-width: 1024px;
+$tablet-width: 1023.98px;
+$mobile-width: 767.98px;
