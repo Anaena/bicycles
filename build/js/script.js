@@ -1,5 +1,4 @@
 // menu
-
 const pageHeaderNav = document.querySelector('.page-header__nav');
 const headerToggle = document.querySelector('.main-nav__toggle');
 

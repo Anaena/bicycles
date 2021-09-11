@@ -18,7 +18,7 @@
       <!--main-nav--opened - добавляется если меню открыто;
           main-nav--closed - добавляется если меню закрыто;
           main-nav__toggle - кнопка; main-nav--nojs - нет js -->
-      <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Нажми чтобы открыть меню">
           <span></span>
         </button>
@@ -65,7 +65,32 @@
         </div>
       </div>
     </section>
+
+    <section class="contacts contacts--wrapper" id="сontacts">
+      <h2>Как нас найти?</h2>
+      <address>
+        <p>Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д. 19</p>
+      </address>
+      <div class="contacts__map">
+        <!-- 1х: 957px; 2x: 1914px -->
+        <img src="img/map.jpg" width="957" height="530" srcset="img/map@2x.jpg 2x" alt="Изображение карты г. Санкт-Петербург в районе офиса Moon">
+      </div>
+    </section>
   </main>
+
+  <footer class="page-footer page-footer--wrapper">
+    <h2 class="visually-hidden">Наши контакты</h2>
+    <a href="puteshestviemechta@gmail.ru" aria-label="Email для связи">
+      <svg width="26" height="20">
+        <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+      </svg>puteshestviemechta@gmail.ru</a>
+    <a href="tel:+749978468446" aria-label="Номер телефона для связи">
+      <svg width="22" height="24">
+        <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+      </svg>
+      +7&nbsp;(499)&nbsp;&#8209;784&#8209;684&#8209;46
+    </a>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
