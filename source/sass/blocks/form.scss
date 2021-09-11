@@ -1,0 +1,39 @@
+.form__item input {
+  @include font($openSans, normal, 400);
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+  padding: 14px 10px 10px 29px;
+  color: $special-gray;
+  background: $basic-white;
+  border: 1px solid $link-water;
+  border-radius: 6px;
+
+  @media (max-width: $tablet-width) {
+    padding: 12px 10px 12px 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 13px 10px 11px 26px;
+  }
+}
+
+.form__item input::placeholder {
+  color: $special-gray;
+  opacity: 0.5;
+}
+
+.form__button {
+  @include font($openSans, normal, 600);
+  font-size: 15px;
+  line-height: 21px;
+  width: 100%;
+  height: 51px;
+  color: $basic-black;
+  background: $egg-blue;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

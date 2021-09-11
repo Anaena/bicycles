@@ -15,7 +15,10 @@
       <a class="page-header__logo logo">
         <img src="img/logo.svg" width="68" height="21" alt="Логотип «Moon»">
       </a>
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+      <!--main-nav--opened - добавляется если меню открыто;
+          main-nav--closed - добавляется если меню закрыто;
+          main-nav__toggle - кнопка; main-nav--nojs - нет js -->
+      <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Нажми чтобы открыть меню">
           <span></span>
         </button>
@@ -39,7 +42,7 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Магазин велосипедов «Moon»</h1>
-    <section class="promo" id="about-us">
+    <section class="page-main__promo promo" id="about-us">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">О нас</h2>
         <div class="promo__description">

@@ -1,0 +1,124 @@
+.promo__wrapper {
+  width: calc(100% - 560px);
+  min-width: 873px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $tablet-width) {
+    width: calc(100% - 242px);
+    min-width: 435px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: calc(100% - 30px);
+    min-width: 288px;
+    max-width: 435px;
+  }
+}
+
+.promo__description {
+  width: calc((100% - 160px) / 2);
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 109px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 96px;
+  }
+}
+
+.promo__description p {
+  @include font($openSans, normal, 300);
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  margin: 0 0 25px;
+  color: $basic-white;
+  opacity: 0.8;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.promo__description p:first-child {
+  @include font($openSans, normal, 700);
+  font-size: 46px;
+  line-height: 64px;
+  margin: 64px 0 25px;
+  color: $basic-white;
+  opacity: 1;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.promo__container {
+  width: calc((100% - 160px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.promo__container p {
+  @include font($openSans, normal, 600);
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  width: 91%;
+  margin: 17px 0 19px;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    width: 64%;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: $basic-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 21px;
+  }
+}
+
+
+.promo__form {
+  width: 327px;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}

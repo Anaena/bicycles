@@ -1,0 +1,11 @@
+.page-main__promo {
+  margin-top: -520px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: -270px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: -332px;
+  }
+}
