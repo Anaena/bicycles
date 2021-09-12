@@ -3,7 +3,7 @@
   min-height: 105px;
   min-width: 873px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +13,7 @@
   @media (max-width: $tablet-width) {
     width: calc(100% - 210px);
     min-width: 558px;
+    min-height: 75px;
     justify-content: space-between;
   }
 
@@ -20,16 +21,16 @@
     width: calc(100% - 42px);
     min-width: 288px;
     min-height: 95px;
-    display: block;
+    justify-content: center;
   }
 }
 
-.page-footer a {
+.page-footer__link {
   @include font($openSans, normal, 400);
   font-size: 16px;
   line-height: 32px;
   display: block;
-  margin: 0 51px 0 36px;
+  margin: 0 52px 0 36px;
   text-align: center;
   color: $black-transparent;
 
@@ -38,27 +39,35 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 7px 15px 13px;
+    margin: 0 0 0 8px;
   }
 }
 
-.page-footer a:last-child {
+.page-footer__link--icon-phone {
   @media (max-width: $mobile-width) {
-    margin: 0 17px 15px 0;
+    margin: 0 13px 0 0;
   }
 }
 
-.page-footer a:hover,
-.page-footer a:focus {
+.page-footer__link:hover,
+.page-footer__link:focus {
   color: $basic-black;
 }
 
-.page-footer a:active {
+.page-footer__link:active {
   color: $egg-blue;
 }
 
-.page-footer svg {
+.page-footer__link svg {
   margin-right: 15px;
   vertical-align: middle;
   fill: none;
+}
+
+.page-footer__link--icon-phone svg {
+  margin: 0 11px 3px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 10px 7px 0;
+  }
 }
