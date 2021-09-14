@@ -10,6 +10,7 @@
   background: $basic-white;
   border: 1px solid $link-water;
   border-radius: 6px;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     padding: 12px 10px 12px 21px;
@@ -25,6 +26,16 @@
   opacity: 0.5;
 }
 
+.form__item input:hover,
+.form__item input:focus {
+  border: 1px solid $egg-blue;
+  box-shadow: 0 0 20px $egg-blue;
+}
+
+.form__item input:active {
+  outline: 3px solid $egg-blue;
+}
+
 .form__button {
   @include font($openSans, normal, 600);
   font-size: 15px;
@@ -36,8 +47,23 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  outline: none;
 
   @media (max-width: $mobile-width) {
     width: 99%;
   }
+}
+
+.form__button:hover,
+.form__button:focus {
+  background: $basic-black;
+  border: 1px solid $egg-blue;
+  color: $egg-blue;
+  box-shadow: 0 0 20px $egg-blue;
+}
+
+.form__button:active {
+  background: $basic-black;
+  border: 3px solid $egg-blue;
+  color: $egg-blue;
 }

@@ -10,6 +10,7 @@
     margin-bottom: 28px;
     padding-left: 16px;
     background: $special-burger;
+    outline: none;
   }
 }
 
@@ -33,7 +34,7 @@
     right: 17px;
     width: 25px;
     height: 25px;
-    background: url("../img/arrow.svg");
+    background: url("../img/icon-arrow.svg");
     cursor: pointer;
   }
 }
@@ -48,6 +49,7 @@
   text-align: center;
   color: $basic-white;
   opacity: 0.7;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     @include font($openSans, normal, 400);
@@ -58,5 +60,27 @@
     padding-bottom: 17px;
     text-align: start;
     color: $grey;
+  }
+}
+
+.site-list__item a:hover,
+.site-list__item a:focus {
+  color: $egg-blue;
+  opacity: 1;
+
+  @media (max-width: $tablet-width) {
+    border-top: 1px solid $egg-blue;
+    border-bottom: 1px solid $egg-blue;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.site-list a:active {
+  color: $basic-white;
+  opacity: 1;
+
+  @media (max-width: $tablet-width) {
+    color: $special-gray;
   }
 }

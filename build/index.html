@@ -27,7 +27,7 @@
             <a href="#about-us">О нас</a>
           </li>
           <li class="site-list__item">
-            <a href="#bike-types">Виды велосипедов</a>
+            <a href="#bike-type">Виды велосипедов</a>
           </li>
           <li class="site-list__item">
             <a href="#video">Видео про велосипеды</a>
@@ -83,6 +83,54 @@
             <p>Профессиональные консультации!</p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <section class="type" id="bike-type">
+      <div class="type__wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul class="type__list">
+          <li class="type__item type__item--road">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/road-bike.jpg" width="342" height="503" srcset="img/road-bike@2x.jpg 2x" alt="Изображение дорожного велосипеда с черной корзиной над переднем колесом, около кирпичной стены">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="type__item type__item--mountain">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/mountain-bike.jpg" width="342" height="566" srcset="img/mountain-bike@2x.jpg 2x" alt="Изображение горного велосипеда на фоне гор">
+            </picture>
+            <p>Горный велосипед</p>
+          </li>
+          <li class="type__item type__item--child">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/child-bike-tablet.webp 1x, img/child-bike-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img src="img/child-bike.jpg" width="342" height="513" srcset="img/child-bike@2x.jpg 2x" alt="Изображение детского велосипеда с розовой корзинкой, розовым сидением для куклы и розовыми деталями на руле и педалях">
+            </picture>
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="video" id="video">
+      <div class="video__text-container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для&nbsp;себя.</p>
+      </div>
+      <div class="video__box">
+        <video poster="img/video-bike.jpg" width="929" height="522">
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <button type="button" aria-label="Нажмите кнопку чтобы поcмотреть видео"></button>
       </div>
     </section>
 

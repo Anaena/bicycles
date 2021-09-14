@@ -36,6 +36,13 @@
     border: none;
     background: $egg-blue;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 1px solid $basic-white;
+    box-shadow: 0 0 20px $basic-white;
+  }
 }
 
 .main-nav--closed span {
@@ -91,6 +98,24 @@
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $tablet-width) {
     background: $basic-white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 1px solid $egg-blue;
+  }
+
+  &:hover span::before,
+  &:hover span::after,
+  &:focus span::after,
+  &:focus span::before {
+    background-color: $egg-blue;
+  }
+
+  &:active span::before,
+  &:active span::after {
+    background-color: $basic-black;
   }
 }
 
