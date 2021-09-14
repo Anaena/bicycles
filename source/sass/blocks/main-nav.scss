@@ -108,7 +108,7 @@
   &:focus,
   &:active {
     outline: 1px solid $egg-blue;
-    box-shadow: 0 0 20px $egg-blue;
+    box-shadow: 0 0 20px $egg-blue-hover;
   }
 
   &:hover span::before,

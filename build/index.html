@@ -7,8 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов «Moon»</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.js" as="script">
+  <link rel="preload" href="img/promo-bike@2x.jpg" as="image">
+  <link rel="preload" href="fonts/open-sans-400.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/open-sans-600.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 
+<!-- page__body--locked - блокирует scroll -->
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -24,20 +30,21 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#about-us">О нас</a>
+            <a class="site-list__link" href="#about-us">О нас</a>
           </li>
           <li class="site-list__item">
-            <a href="#bike-type">Виды велосипедов</a>
+            <a class="site-list__link" href="#bike-type">Виды велосипедов</a>
           </li>
           <li class="site-list__item">
-            <a href="#video">Видео про велосипеды</a>
+            <a class="site-list__link" href="#video">Видео про велосипеды</a>
           </li>
           <li class="site-list__item">
-            <a href="#сontacts">Контакты</a>
+            <a class="site-list__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
+    <!-- page-header__background--nojs - убирает margin-top когда нет js -->
     <div class="page-header__background page-header__background--nojs"></div>
   </header>
 
@@ -135,7 +142,7 @@
       </div>
     </section>
 
-    <section class="contacts contacts--wrapper" id="сontacts">
+    <section class="contacts contacts--wrapper" id="contacts">
       <h2>Как нас найти?</h2>
       <address>
         <p>Мы находимся по адресу: Санкт&#8209;Петербург, ул.&nbsp;Большая Конюшенная, д. 19</p>

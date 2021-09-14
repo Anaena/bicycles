@@ -15,3 +15,8 @@
   margin: 0 auto;
   background-color: $basic-white;
 }
+
+.page__body--locked {
+  position: fixed;
+  overflow-y: scroll;
+}

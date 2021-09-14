@@ -18,7 +18,6 @@
 
 .video__text-container {
   width: 100%;
-  // min-width: 1024px;
   min-height: 706px;
   padding: 0;
   padding-top: 95px;
@@ -48,7 +47,7 @@
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 30px;
-    margin: 34px 0 15px;
+    margin: 40px 0 20px;
   }
 
   @media (max-width: $mobile-width) {
@@ -144,7 +143,7 @@
 .video__box button:hover,
 .video__box button:focus {
   outline: 1px solid $basic-black;
-  box-shadow: 0 0 20px $egg-blue;
+  box-shadow: 0 0 20px $egg-blue-hover;
 }
 
 .video__box button:active {
