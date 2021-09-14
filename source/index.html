@@ -16,9 +16,9 @@
         <img src="img/logo.svg" width="68" height="21" alt="Логотип «Moon»">
       </a>
       <!--main-nav--opened - добавляется если меню открыто;
-          main-nav--closed - добавляется если меню закрыто;
-          main-nav__toggle - кнопка; main-nav--nojs - нет js -->
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        main-nav--closed - добавляется если меню закрыто;
+        main-nav__toggle - кнопка; main-nav--nojs - нет js -->
+      <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Нажми чтобы открыть меню">
           <span></span>
         </button>
@@ -38,6 +38,7 @@
         </ul>
       </nav>
     </div>
+    <div class="page-header__background page-header__background--nojs"></div>
   </header>
 
   <main class="page-main">
@@ -161,7 +162,8 @@
       <svg width="26" height="20">
         <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
       </svg>puteshestviemechta@gmail.ru</a>
-    <a class="page-footer__link page-footer__link--icon-phone" href="tel:+749978468446" aria-label="Номер телефона для связи">
+    <a class="page-footer__link page-footer__link--icon-phone" href="tel:+749978468446"
+      aria-label="Номер телефона для связи">
       <svg width="22" height="24">
         <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
       </svg>

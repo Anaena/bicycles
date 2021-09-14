@@ -74,7 +74,6 @@
 .type__item {
   position: relative;
   width: calc((100% - 100px) / 3);
-  min-width: 342px;
   margin: 0 50px 33px 0;
   z-index: 0;
 
@@ -211,6 +210,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
+  background-color: $link-water;
 
   @media (max-width: $tablet-width) {
     height: 300px;

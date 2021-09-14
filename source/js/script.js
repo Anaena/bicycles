@@ -1,7 +1,10 @@
 // menu
+
 const pageHeaderNav = document.querySelector('.page-header__nav');
+const pageHeaderBackground = document.querySelector('.page-header__background');
 const headerToggle = document.querySelector('.main-nav__toggle');
 
+pageHeaderBackground.classList.remove('page-header__background--nojs');
 pageHeaderNav.classList.remove('main-nav--nojs');
 
 headerToggle.addEventListener('click', function () {

@@ -16,6 +16,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    min-height: 30px;
   }
 }
 
@@ -90,6 +91,9 @@
 
 .main-nav--opened {
   @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
     min-height: 568px;
     background-color: $basic-white;
   }
@@ -104,6 +108,7 @@
   &:focus,
   &:active {
     outline: 1px solid $egg-blue;
+    box-shadow: 0 0 20px $egg-blue;
   }
 
   &:hover span::before,
@@ -123,6 +128,7 @@
   @media (max-width: $tablet-width) {
     position: relative;
     display: inline-block;
+    vertical-align: bottom;
     width: 30px;
     height: 1px;
     margin: 5.25px 0;
@@ -157,12 +163,17 @@
 
 .main-nav--opened .main-nav__list {
   @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 99px;
-    right: 0;
     min-height: 360px;
     display: flex;
     background-color: $basic-white;
+  }
+}
+
+.main-nav--nojs {
+  @media (max-width: $tablet-width) {
+    position: static;
+    width: 100%;
+    min-height: 0;
   }
 }
 
@@ -174,8 +185,9 @@
 
 .main-nav--nojs .main-nav__list {
   @media (max-width: $tablet-width) {
-    position: static;
-    min-height: 0;
+    width: 100%;
+    justify-content: flex-start;
+    min-height: 360px;
   }
 }
 

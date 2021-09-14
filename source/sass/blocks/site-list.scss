@@ -2,9 +2,10 @@
   margin-right: 40px;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
-    display: flex;
     position: relative;
+    width: 100%;
+    min-height: 62px;
+    display: flex;
     align-items: flex-start;
     margin-right: 0;
     margin-bottom: 28px;
