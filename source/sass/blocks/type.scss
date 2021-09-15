@@ -56,15 +56,12 @@
 .type__list {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
-
-  @media (max-width: $tablet-width) {
-    flex-wrap: wrap;
-  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
@@ -74,7 +71,7 @@
 .type__item {
   position: relative;
   width: calc((100% - 100px) / 3);
-  margin: 0 50px 33px 0;
+  margin: 0 0 33px 0;
   z-index: 0;
 
   @media (max-width: $tablet-width) {
