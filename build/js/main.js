@@ -51,7 +51,7 @@ mainHeaderElement.addEventListener('click', (evt) => {
     body.classList.remove('page__body--locked');
     pageHeaderNav.classList.remove('main-nav--opened');
     pageHeaderNav.classList.add('main-nav--closed');
-    document.querySelector(evt.target.hash).scrollIntoView({ behavior: 'smooth'});
+    document.querySelector(evt.target.hash).scrollIntoView({ behavior: 'smooth' });
   }
 });
 
@@ -60,7 +60,7 @@ mainHeaderElement.addEventListener('click', (evt) => {
 const checkNameValidity = (nameElement) => {
   const inputElement = nameElement.parentNode;
   const valueLength = nameElement.value.length;
-  
+
   if (valueLength < MIN_NAME_LENGTH) {
     inputElement.classList.add('form__item--invalid-input');
     nameElement.setCustomValidity(`Ещё ${MIN_NAME_LENGTH - valueLength} симв.`);

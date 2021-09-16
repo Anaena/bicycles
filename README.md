@@ -11,3 +11,7 @@ npm run build
 3. Запускает сборку проекта.
 
 npm run start
+
+4. Для запуска проверки на ошибки в editorconfig и stylelint можно запустить тестирование.
+
+npm test
