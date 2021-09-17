@@ -10,6 +10,7 @@
   width: calc(100% - 560px);
   min-height: 340px;
   min-width: 873px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -21,6 +22,7 @@
     width: 100%;
     min-height: 340px;
     min-width: 320px;
+    max-width: 1023px;
   }
 
   @media (max-width: $mobile-width) {

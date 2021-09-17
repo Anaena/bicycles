@@ -1,7 +1,8 @@
 'use strict';
 
-const MIN_NAME_LENGTH = 2;
+const MIN_NAME_LENGTH = 1;
 const MAX_NAME_LENGTH = 30;
+const TEL_LENGHT = 11;
 
 const pageHeaderNav = document.querySelector('.page-header__nav');
 const pageHeaderBackground = document.querySelector('.page-header__background');
@@ -63,15 +64,11 @@ const checkNameValidity = (nameElement) => {
 
   if (valueLength < MIN_NAME_LENGTH) {
     inputElement.classList.add('form__item--invalid-input');
-    nameElement.setCustomValidity(`Ещё ${MIN_NAME_LENGTH - valueLength} симв.`);
   } else if (valueLength > MAX_NAME_LENGTH) {
     inputElement.classList.add('form__item--invalid-input');
-    nameElement.setCustomValidity(`Удалите лишние ${valueLength - MAX_NAME_LENGTH} симв.`);
   } else {
     inputElement.classList.remove('form__item--invalid-input');
-    nameElement.setCustomValidity('');
   }
-  nameElement.reportValidity();
 };
 
 const checkPhoneValidity = (phoneElement) => {
@@ -79,18 +76,41 @@ const checkPhoneValidity = (phoneElement) => {
 
   if (phoneElement.validity.patternMismatch) {
     inputElement.classList.add('form__item--invalid-input');
-    phoneElement.setCustomValidity(`Введите Ваш номер телефона`);
   } else {
     inputElement.classList.remove('form__item--invalid-input');
-    phoneElement.setCustomValidity('');
   }
-  phoneElement.reportValidity();
 };
 
-userNameInput.addEventListener('input', () => {
+let isStorageSupport = true;
+let storage = "";
+let storagePhone = "";
+
+try {
+  storage = localStorage.getItem('userName');
+  storagePhone = localStorage.getItem('phoneNumber');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+userNameInput.addEventListener('input', (evt) => {
   checkNameValidity(userNameInput);
+  localStorage.setItem('userName', e.target.value);
 });
 
-userPhoneInput.addEventListener('input', () => {
+userPhoneInput.addEventListener('input', (evt) => {
   checkPhoneValidity(userPhoneInput);
+  localStorage.setItem('phoneNumber', e.target.value);
+});
+
+feedbackForm.addEventListener('submit', (evt) => {
+  if (!userNameInput.value || !userPhoneInput.value) {
+    evt.preventDefault();
+    userPhoneInput.parentNode.classList.add('form__item--invalid-input');
+    userNameInput.parentNode.classList.add('form__item--invalid-input');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('userName', userNameInput.value);
+      localStorage.setItem('phoneNumber', userPhoneInput.value);
+    }
+  }
 });

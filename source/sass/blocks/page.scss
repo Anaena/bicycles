@@ -6,11 +6,10 @@
 }
 
 .page__body {
-  max-width: 1440px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  min-width: 320px;
+  min-width: 290px;
   min-height: 100%;
   margin: 0 auto;
   background-color: $basic-white;

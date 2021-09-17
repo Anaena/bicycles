@@ -14,7 +14,8 @@
 
 .type__wrapper {
   width: calc(100% - 314px);
-  min-width: 1024px;
+  min-width: 935px;
+  max-width: 1126px;
   margin: 0 auto;
   padding: 0;
   padding-top: 125px;
@@ -27,6 +28,7 @@
   @media (max-width: $tablet-width) {
     width: calc(100% - 178px);
     min-width: 320px;
+    max-width: 800px;
     padding-top: 30px;
   }
 

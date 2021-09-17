@@ -1,6 +1,7 @@
 .contacts--wrapper {
   width: calc(100% - 482px);
   min-width: 873px;
+  max-width: 958px;
   margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
@@ -11,7 +12,7 @@
 
   @media (max-width: $tablet-width) {
     width: calc(100% - 70px);
-    min-width: 767px;
+    min-width: 750px;
     margin-bottom: 17px;
   }
 
