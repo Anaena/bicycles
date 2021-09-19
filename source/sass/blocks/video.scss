@@ -16,25 +16,31 @@
   }
 }
 
-.video__text-container {
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   min-height: 706px;
   padding: 0;
   padding-top: 95px;
-  background: $black-russian;
+  background: linear-gradient(0deg, $basic-white 19%, $black-russian 19%);
 
   @media (max-width: $tablet-width) {
     min-height: 412px;
     padding-top: 30px;
+    background: linear-gradient(0deg, $basic-white 24%, $black-russian 24%);
   }
 
   @media (max-width: $mobile-width) {
     min-height: 385px;
     min-width: 288px;
+    background: linear-gradient(0deg, $basic-white 19%, $black-russian 19%);
   }
 }
 
-.video__text-container h2 {
+.video__container h2 {
   @include font($openSans, normal, 600);
   font-size: 30px;
   line-height: 30px;
@@ -55,7 +61,7 @@
   }
 }
 
-.video__text-container p {
+.video__container p {
   @include font($openSans, normal, 300);
   font-size: 16px;
   line-height: 28px;
@@ -68,11 +74,13 @@
 
   @media (max-width: $tablet-width) {
     width: 60%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
     width: 96%;
+    max-width: 551px;
+    margin-bottom: 53px;
   }
 }
 
@@ -82,19 +90,16 @@
   justify-content: center;
   width: calc(100% - 510px);
   margin: 0 auto;
-  margin-top: -478px;
   margin-bottom: 69px;
 
   @media (max-width: $tablet-width) {
     width: calc(100% - 264px);
-    margin-top: -202px;
     margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
     width: calc(100% - 32px);
     min-width: 288px;
-    margin-top: -124px;
   }
 }
 
@@ -107,8 +112,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 288px;
-    height: 162px;
+    width: 100%;
+    min-width: 288px;
+    max-width: 503px;
+    height: auto;
   }
 }
 
@@ -116,8 +123,8 @@
   position: absolute;
   width: 65px;
   height: 65px;
-  top: 44%;
-  background-image: url("../../img/play.svg");
+  align-self: center;
+  background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -130,13 +137,11 @@
   @media (max-width: $tablet-width) {
     width: 91px;
     height: 91px;
-    top: 34%;
   }
 
   @media (max-width: $mobile-width) {
     width: 65px;
     height: 65px;
-    top: 30%;
   }
 }
 

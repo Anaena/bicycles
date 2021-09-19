@@ -48,12 +48,17 @@
 .facts__wrapper ol {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
   list-style: none;
   counter-reset: section;
 
+  @media (max-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
   @media (max-width: $mobile-width) {
+    justify-content: center;
     margin: 20px 0;
   }
 }
@@ -63,14 +68,14 @@
   width: calc((100% - 114px) / 4);
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 38px 0 0;
   padding-top: 60px;
   text-align: center;
 
   @media (max-width: $tablet-width) {
     width: calc((100% - 30px) / 2);
     padding-top: 48px;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -79,6 +84,10 @@
     margin-bottom: 35px;
     padding-top: 30px;
   }
+}
+
+.facts__wrapper li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .facts__wrapper li::before {

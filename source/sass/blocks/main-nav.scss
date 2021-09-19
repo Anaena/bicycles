@@ -8,14 +8,13 @@
   border-bottom: 1px solid $white-transparent;
 
   @media (max-width: $tablet-width) {
-    width: 320px;
+    width: 100%;
     min-height: 50px;
     border-bottom: none;
     z-index: 3;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
     min-height: 30px;
   }
 }
@@ -91,10 +90,14 @@
 
 .main-nav--opened {
   @media (max-width: $tablet-width) {
-    position: absolute;
+    position: fixed;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 99px;
+    overflow: auto;
+    z-index: 10;
     top: 0;
     right: 0;
-    min-height: 568px;
     background-color: $basic-white;
   }
 }
@@ -173,6 +176,8 @@
   @media (max-width: $tablet-width) {
     position: static;
     width: 100%;
+    padding-top: 10px;
+    height: auto;
     min-height: 0;
   }
 }
@@ -201,19 +206,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    width: 320px;
     flex-direction: column;
     align-items: start;
     margin-bottom: 10px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
   }
 }

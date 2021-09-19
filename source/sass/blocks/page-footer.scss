@@ -13,6 +13,7 @@
   @media (max-width: $tablet-width) {
     width: calc(100% - 210px);
     min-width: 558px;
+    max-width: 564px;
     min-height: 75px;
     padding-bottom: 50px;
     justify-content: space-between;
@@ -20,7 +21,8 @@
 
   @media (max-width: $mobile-width) {
     width: calc(100% - 42px);
-    min-width: 288px;
+    min-width: 300px;
+    max-width: 558px;
     min-height: 95px;
     padding-bottom: 5px;
     justify-content: center;
@@ -41,7 +43,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 0 8px;
+    margin: 0 13px 0 18px;
   }
 }
 
