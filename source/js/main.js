@@ -5,9 +5,9 @@ const MAX_NAME_LENGTH = 30;
 const TEL_LENGHT = 11;
 
 const pageHeaderNav = document.querySelector('.page-header__nav');
-const pageHeaderBackground = document.querySelector('.page-header__background');
+const pageHeaderBackground = document.querySelector('.page-header__container');
 
-pageHeaderBackground.classList.remove('page-header__background--nojs');
+pageHeaderBackground.classList.remove('page-header__container--nojs');
 pageHeaderNav.classList.remove('main-nav--nojs');
 pageHeaderNav.classList.remove('main-nav--opened');
 pageHeaderNav.classList.add('main-nav--closed');
