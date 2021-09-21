@@ -15,12 +15,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
 
-      - name: Installing dependencies
+      - name: Installing Dependencies
         run: npm ci
 
       - name: Linting
@@ -29,7 +29,7 @@ jobs:
       - name: Building
         run: npm run build
 
-      - name: Deploying
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
